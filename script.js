@@ -7,7 +7,7 @@ var numeric = "123456789";
 var special = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
 
 // ASKS user to input number of characters desired for password
-// VARIFIES that it is a number between 8 and 128 inclucive.
+// VERIFIES that it is a number between 8 and 128 inclucive.
 // RETURNS the user input once varified.
 function verifyLength() {
   input = prompt(`How many character would you like?
@@ -25,7 +25,7 @@ function verifyLength() {
 }
 
 // ASKS user to choose type of characters to be available in password
-// VARIFIES that at lease one type has been chosen
+// VERIFIES that at lease one type has been chosen
 // RETURNS the array of all possible characters for user password
 function getCharacters() {
   var characters = '';
@@ -66,7 +66,8 @@ function getCharacters() {
   return characters;
 }
 
-// RETURNS a random integer between the two input integers inclusive
+// INPUT is two integers (lowest possible output, highest possible output)
+// RETURNS a random integer between the inputs
 function randomInt(low = 1, high = 10){
   return Math.floor((Math.random() * high) + low);
 }
