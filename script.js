@@ -67,7 +67,7 @@ function getCharacters() {
 }
 
 // INPUT is two integers (lowest possible output, highest possible output)
-// RETURNS a random integer between the inputs
+// RETURNS a random integer from low to high
 function randomInt(low = 1, high = 10){
   return Math.floor((Math.random() * high) + low);
 }
